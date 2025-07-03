@@ -1,12 +1,9 @@
-peso = float(input("Digite seu peso (kg): "))
-altura = float(input("Digite sua altura (m): "))
+macas = int(input("Digite a quantidade de maçãs vendidas: "))
+bananas = int(input("Digite a quantidade de bananas vendidas: "))
 
-imc = peso / (altura ** 2)
-print(f"Seu IMC é: {imc:.2f}")
-
-if imc < 18.5:
-    print("Você está abaixo do peso.")
-elif imc < 25:
-    print("Você está com peso normal.")
+if macas > bananas:
+    print("As maçãs tiveram mais vendas.")
+elif bananas > macas:
+    print("As bananas tiveram mais vendas.")
 else:
-    print("Você está acima do peso.")
+    print("As vendas foram iguais.")
